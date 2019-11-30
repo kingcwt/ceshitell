@@ -404,6 +404,11 @@ body {
     padding: .25rem;
     color: #404040;
 }
+.result_header .b span:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .result_header .b span:nth-child(2){
     padding-left: .15rem;
@@ -425,6 +430,10 @@ body {
 .result_main .m i{
     color: #39d6ab;
     font-size: 2rem;
+    margin-bottom: .25rem;
+}
+.result_main .m img{
+    width: 2rem;
     margin-bottom: .25rem;
 }
 .result_main .m .s1{
