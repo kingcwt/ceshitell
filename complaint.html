@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投诉申请</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1538649_sc06w8pnsx.css">
+</head>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (clientWidth < 320) {
+                    docEl.style.fontSize = 50 + 'px'
+                } else if (clientWidth > 750) {
+                    docEl.style.fontSize = 100 + 'px'
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+</script>
+<body>
+<header class="header">
+    <div class="outbox">
+        <p class="pimg"><i class="iconfont icon-tousu"></i></p>
+        <p class="">投诉申请</p>
+        <!--18911363799-->
+    </div>
+</header>
+<div class="content-dialog  popovered pop-error">
+    <div class="Pop-text">
+        <div class="text">
+            <p class="Pop"></p>
+        </div>
+    </div>
+</div>
+<section class="com_main">
+    <div class="one">
+        <p class="p2">
+            <span><strong style="color: red;"></strong>投诉编码：</span>
+            <input type="text" class="bianma" placeholder="请输入投诉编码">
+        </p>
+        <p class="p2">
+            <span><strong style="color: red;">*</strong>姓名：</span>
+            <input type="text" class="name" placeholder="请输入姓名">
+        </p>
+        <p class="p2">
+            <span><strong style="color: red;">*</strong>联系电话：</span>
+            <input type="text" class="tel" placeholder="请输入手机号">
+        </p>
+    </div>
+    <div class="com_two">
+        <p class="p2">
+            <span><strong style="color: red;">*</strong>申诉内容：</span>
+            <textarea class="cot" placeholder="请输入申诉内容"></textarea>
+        </p>
+    </div>
+    <div class="com_three">
+        <p class="p2">
+            <span><strong style="color: red;"></strong>申诉附件：</span>
+            <input class="upload" type="file" placeholder="上传附件">
+        </p>
+    </div>
+    <div class="com_four">
+        <p class="p2">
+            <span><strong style="color: red;">*</strong>短信验证码：</span>
+            <input class="sm" type="text" placeholder="短信验证码">
+            <button class="getsm">获取验证码</button>
+        </p>
+    </div>
+    <div class="com_five">
+        <a class="go">提交申请</a>
+        <a class="back" href="index.html">返回上一页</a>
+    </div>
+
+</section>
+</body>
+</html>
+<script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function showErrorMsg(msg) {
+        $(".pop-error").removeClass("popovered").find(".Pop").text(msg);
+        setTimeout(function () {
+            $(".pop-error").addClass("popovered");
+        }, 2000);
+        return false;
+    }
+
+    $('.upload').on('change',function () {
+        cu_files = $(this)[0].files[0];
+        console.log(cu_files,'ok@?');
+        data = new FormData();
+        data.append('file', cu_files);
+        console.log(data,'ok');
+    })
+    $('.go').on('click',function () {
+        // if($('.bianma').val().trim().length<1){
+        //     showErrorMsg('请输入投诉编码');
+        //     return false;
+        // }
+        console.log($('.tel').val().trim().length);
+        if($('.name').val().trim().length<1){
+            showErrorMsg('请输入姓名');
+            return false;
+        }else if($('.tel').val().trim().length!=11){
+            showErrorMsg('请输入正确的手机号');
+            return false;
+        }else if($('.cot').val().trim().length<1){
+           showErrorMsg('请输入申诉内容');
+           return false;
+       }else if($('.sm').val().trim().length<1){
+           showErrorMsg('请输入短信验证码');
+           return false;
+       }
+    })
+</script>
