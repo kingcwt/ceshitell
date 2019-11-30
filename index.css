@@ -41,7 +41,9 @@ body, html, header, main, div, span, p, li, h5, h3, h4, h6 {
     font-family: 'Microsoft YaHei', 'SF Pro Display', Roboto, Noto, Arial, 'PingFang SC', sans-serif;
 }
 
-
+input{
+    -webkit-appearance: none;
+}
 
 
 a {
