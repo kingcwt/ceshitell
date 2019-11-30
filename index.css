@@ -409,7 +409,7 @@ body {
 }
 .result_header .b i{
     font-size: .28rem;
-    /*padding-top: .06rem;*/
+    padding-bottom: .02rem;
 }
 .result_header .b span:nth-child(1){
     display: flex;
