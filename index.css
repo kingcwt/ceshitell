@@ -408,6 +408,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .result_header .b span:nth-child(2){
@@ -433,7 +435,9 @@ body {
     margin-bottom: .25rem;
 }
 .result_main .m img{
-    width: 2rem;
+    /*width: 2rem;*/
+    width: 96px;
+    height: 96px;
     margin-bottom: .25rem;
 }
 .result_main .m .s1{
