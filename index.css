@@ -41,7 +41,7 @@ body, html, header, main, div, span, p, li, h5, h3, h4, h6 {
     font-family: 'Microsoft YaHei', 'SF Pro Display', Roboto, Noto, Arial, 'PingFang SC', sans-serif;
 }
 
-input{
+input,textarea{
     -webkit-appearance: none;
 }
 
@@ -323,7 +323,7 @@ body {
     align-items: center;
 }
 .com_three .p2 .upload{
-    border: .025rem solid #dad6d6;
+    /*border: .025rem solid #dad6d6;*/
     border-radius: .08rem;
 }
 .com_four .p2 span{
@@ -389,4 +389,50 @@ body {
     padding: .16rem .28rem;
 
 
+}
+
+/*--------result*/
+.result_header{
+    width: 100%;
+    background: #fff;
+    margin-bottom: .25rem;
+}
+.result_header .b{
+    width: 1.5rem;
+    display: flex;
+    font-size: .33rem;
+    padding: .25rem;
+    color: #404040;
+}
+
+.result_header .b span:nth-child(2){
+    padding-left: .15rem;
+}
+.result_main{
+    font-size: .3rem;
+    background: #fff;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result_main .m{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result_main .m i{
+    color: #39d6ab;
+    font-size: 2rem;
+    margin-bottom: .25rem;
+}
+.result_main .m .s1{
+    color: #000;
+    font-size: .45rem;
+    margin-bottom: .25rem;
+}
+.result_main .m .s2{
+    color: #888;
+    font-size: .3rem;
 }

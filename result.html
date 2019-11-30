@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投诉申请</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1538649_1mh2evgoazv.css">
+</head>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (clientWidth < 320) {
+                    docEl.style.fontSize = 50 + 'px'
+                } else if (clientWidth > 750) {
+                    docEl.style.fontSize = 100 + 'px'
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+</script>
+<body>
+<header class="result_header">
+    <a class="b" href="complaint.html">
+        <span><</span>
+        <span>返回</span>
+    </a>
+</header>
+<main class="result_main">
+    <div class="m">
+        <i class="iconfont icon-dengdaichuli"></i>
+        <span class="s1">等待处理</span>
+        <span class="s2">已提交申请，等待处理中</span>
+    </div>
+</main>
+</body>
+</html>

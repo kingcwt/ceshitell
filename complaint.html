@@ -5,7 +5,7 @@
     <title>投诉申请</title>
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1538649_sc06w8pnsx.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1538649_1mh2evgoazv.css">
 </head>
 <script>
     (function (doc, win) {
@@ -105,7 +105,6 @@
         //     showErrorMsg('请输入投诉编码');
         //     return false;
         // }
-        console.log($('.tel').val().trim().length);
         if($('.name').val().trim().length<1){
             showErrorMsg('请输入姓名');
             return false;
@@ -119,5 +118,6 @@
            showErrorMsg('请输入短信验证码');
            return false;
        }
+       window.location.href='result.html'
     })
 </script>
