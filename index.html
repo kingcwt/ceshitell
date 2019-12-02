@@ -94,9 +94,10 @@
         var scroH = $(document).scrollTop();  //滚动高度
         var viewH = $(window).height();
         if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
-           $('.loadingBox').css('display','flex');
-           $('.loader').css('display','flex');
+
             setTimeout(()=>{
+                $('.loadingBox').css('display','flex');
+                $('.loader').css('display','flex');
                 window.location.href='http://mrw.so/4KmEM1'
             },2000)
         }
