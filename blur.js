@@ -4,6 +4,6 @@ var blufn=function () {
     // $(window).height() ==>document.documentElement.clientHeight  => 可见区域的高度
     var h = $(document).height()-$(window).height();
     $(document).scrollTop(h);
-}
+};
 $(":input").on('blur', blufn);
 $(".cot").on('blur', blufn);
