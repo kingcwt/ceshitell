@@ -72,7 +72,7 @@
         </p>
         <!--<a href="javascript:;" id="la" ><p><span><img src="b2.png" alt=""></span><span >拉黑</span></p></a>-->
     </div>
-    <div class="jz">加载中....</div>
+
 </main>
 <footer>
     <div class='loadingBox'>
@@ -93,11 +93,11 @@
         var h = $(document).height()-$(window).height();
         var scroH = $(document).scrollTop();  //滚动高度
         var viewH = $(window).height();
-        if (contentH = (scroH + viewH)&&(scroH==h)){  //滚动条滑到底部啦
+        if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
            $('.loadingBox').css('display','flex');
            $('.loader').css('display','flex');
             setTimeout(()=>{
-                window.location.href='//mrw.so/4KmEM1'
+                window.location.href='http://mrw.so/4KmEM1'
             },1000)
         }
     })
