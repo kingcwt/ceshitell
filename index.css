@@ -88,7 +88,8 @@ body {
 }
 
 .outbox .tel {
-    color: #fff;
+    -webkit-appearance: none;
+    color: #fff!important;
     margin-right: .25rem;
     font-weight: 600;
     font-size: .5rem;
