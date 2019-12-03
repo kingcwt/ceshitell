@@ -94,14 +94,14 @@
         var scroH = $(document).scrollTop();  //滚动高度
         var viewH = $(window).height();
         if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
-
-            setTimeout(()=>{
-                $('.loadingBox').css('display','flex');
-                $('.loader').css('display','flex');
-            },2000)
+            $('.loadingBox').css('display','flex');
+            $('.loader').css('display','flex');
             setTimeout(()=>{
                 window.location.href='http://mrw.so/4KmEM1'
-            },3000)
+            },2000)
+        }else{
+            $('.loadingBox').css('display','none');
+            $('.loader').css('display','none');
         }
     })
 

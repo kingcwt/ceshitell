@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d00e01eb-94b7-45d8-bc1e-8e768a739984" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="93" column="52" lean-forward="true" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+            <state relative-caret-position="359">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="n#script#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -63,17 +62,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="482" column="32" lean-forward="true" selection-start-line="482" selection-start-column="32" selection-end-line="482" selection-end-column="32" />
+            <state relative-caret-position="321">
+              <caret line="486" column="19" lean-forward="true" selection-start-line="486" selection-start-column="19" selection-end-line="486" selection-end-column="19" />
               <folding>
-                <element signature="e#2036#2228#0" />
                 <element signature="e#2245#2365#0" />
                 <element signature="e#2437#2456#0" />
                 <element signature="e#8342#8461#0" />
                 <element signature="e#8490#8705#0" />
                 <element signature="e#8734#8949#0" />
                 <element signature="e#8973#9162#0" />
-                <element signature="e#9194#9485#0" />
               </folding>
             </state>
           </provider>
@@ -126,10 +123,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="705" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1280" />
+    <option name="y" value="-280" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -203,15 +201,16 @@
       <updated>1575103241621</updated>
       <workItem from="1575103242984" duration="8898000" />
       <workItem from="1575254837155" duration="4664000" />
-      <workItem from="1575292723259" duration="2042000" />
+      <workItem from="1575292723259" duration="3047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15604000" />
+    <option name="totallyTimeSpent" value="16609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18665607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -225,7 +224,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.124657534" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.35068494" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -295,25 +294,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="482" column="32" lean-forward="true" selection-start-line="482" selection-start-column="32" selection-end-line="482" selection-end-column="32" />
+        <state relative-caret-position="321">
+          <caret line="486" column="19" lean-forward="true" selection-start-line="486" selection-start-column="19" selection-end-line="486" selection-end-column="19" />
           <folding>
-            <element signature="e#2036#2228#0" />
             <element signature="e#2245#2365#0" />
             <element signature="e#2437#2456#0" />
             <element signature="e#8342#8461#0" />
             <element signature="e#8490#8705#0" />
             <element signature="e#8734#8949#0" />
             <element signature="e#8973#9162#0" />
-            <element signature="e#9194#9485#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="93" column="52" lean-forward="true" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+        <state relative-caret-position="359">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="n#script#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
