@@ -105,6 +105,7 @@ body {
 
 .main {
     margin-top: .2rem;
+    height: 100vh;
 }
 
 .main .one {

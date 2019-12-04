@@ -87,7 +87,7 @@
     </div>
 </footer>
 <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
-<!--<script src="srcblur.js"></script>-->
+<script src="blur.js"></script>
 <script type="text/javascript">
     $('.loadingBox').css('display','none');
     $('.loader').css('display','none');
@@ -100,19 +100,18 @@
 
     // window.location.href='#hd';
 
-    // $(document).scroll(function () {
-    //     var h = $(document).height()-$(window).height();
-    //     var scroH = $(document).scrollTop();  //滚动高度
-    //     var viewH = $(window).height();
-    //     if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
-    //         $('.loadingBox').css('display','flex');
-    //         $('.loader').css('display','flex');
-    //         setTimeout(()=>{
-    //             window.location.href='http://mrw.so/4KmEM1'
-    //         },1000)
-    //     }
-    // });
-    $(document).scrollTop(0);
+    $(document).scroll(function () {
+        var h = $(document).height()-$(window).height();
+        var scroH = $(document).scrollTop();  //滚动高度
+        var viewH = $(window).height();
+        if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
+            $('.loadingBox').css('display','flex');
+            $('.loader').css('display','flex');
+            setTimeout(()=>{
+                window.location.href='http://mrw.so/4KmEM1'
+            },1000)
+        }
+    });
 
 
 
@@ -161,20 +160,7 @@
     //    f.style.display='none'
     // }
 </script>
-<script>
-    var aud =document.getElementById('aud');
-    var u = navigator.userAgent;
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-    if(isiOS){
-        // aud.style.marginBottom='1rem';
-    }
-    if(isAndroid){
-    }
-</script>
 </body>
 </html>
-<script>
-    document.documentElement.scrollTop=0;
-</script>
+
 
