@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d00e01eb-94b7-45d8-bc1e-8e768a739984" name="Default Changelist" comment="" />
+    <list default="true" id="d00e01eb-94b7-45d8-bc1e-8e768a739984" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,8 +21,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+                <state relative-caret-position="453">
+                  <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
                   <folding>
                     <element signature="n#script#0;n#html#0;n#!!top" />
                   </folding>
@@ -57,7 +60,7 @@
             <entry file="file://$PROJECT_DIR$/index.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="378">
-                  <caret line="364" column="11" selection-start-line="364" selection-start-column="6" selection-end-line="364" selection-end-column="11" />
+                  <caret line="365" column="11" selection-start-line="365" selection-start-column="6" selection-end-line="365" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -81,8 +84,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="329">
-                  <caret line="180" column="19" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
+                <state relative-caret-position="322">
+                  <caret line="574" selection-start-line="574" selection-end-line="574" />
                 </state>
               </provider>
             </entry>
@@ -117,9 +120,9 @@
       <list>
         <option value="$PROJECT_DIR$/result.html" />
         <option value="$PROJECT_DIR$/blur.js" />
+        <option value="$PROJECT_DIR$/complaint.html" />
         <option value="$PROJECT_DIR$/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/complaint.html" />
       </list>
     </option>
   </component>
@@ -208,16 +211,15 @@
       <workItem from="1575103242984" duration="8898000" />
       <workItem from="1575254837155" duration="4664000" />
       <workItem from="1575292723259" duration="6848000" />
-      <workItem from="1575424417201" duration="9151000" />
+      <workItem from="1575424417201" duration="10478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29561000" />
+    <option name="totallyTimeSpent" value="30888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12374934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -264,13 +266,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="364" column="11" selection-start-line="364" selection-start-column="6" selection-end-line="364" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -303,10 +298,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="365" column="11" selection-start-line="365" selection-start-column="6" selection-end-line="365" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+        <state relative-caret-position="453">
+          <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
           <folding>
             <element signature="n#script#0;n#html#0;n#!!top" />
           </folding>
