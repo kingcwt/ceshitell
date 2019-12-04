@@ -49,17 +49,17 @@
         <!--</p>-->
         <p class="p2">
             <span><strong style="color: red;">*</strong>姓名：</span>
-            <input type="text" class="name" placeholder="请输入姓名">
+            <input type="text" class="flnm" placeholder="请输入姓名">
         </p>
         <p class="p2">
             <span><strong style="color: red;">*</strong>联系电话：</span>
-            <input type="text" class="tel" placeholder="请输入手机号">
+            <input type="text" class="mob" placeholder="请输入手机号">
         </p>
     </div>
     <div class="com_two">
         <p class="p2">
             <span><strong style="color: red;">*</strong>申诉内容：</span>
-            <textarea class="cot" placeholder="请输入申诉内容"></textarea>
+            <textarea class="desc" placeholder="请输入申诉内容"></textarea>
         </p>
     </div>
     <!--<div class="com_three">-->
@@ -104,20 +104,32 @@
         //     showErrorMsg('请输入投诉编码');
         //     return false;
         // }
-        if($('.name').val().trim().length<1){
+        if($('.flnm').val().trim().length<1){
             showErrorMsg('请输入姓名');
             return false;
-        }else if($('.tel').val().trim().length!=11){
+        }else if($('.mob').val().trim().length!=11){
             showErrorMsg('请输入正确的手机号');
             return false;
-        }else if($('.cot').val().trim().length<1){
+        }else if($('.desc').val().trim().length<1){
             showErrorMsg('请输入申诉内容');
             return false;
         }else if($('.sm').val().trim().length<1){
             showErrorMsg('请输入短信验证码');
             return false;
         }
-        window.location.href='result.html'
+        data={
+            flnm:$('.flnm').val(),
+            mob:$('.mob').val(),
+            desc:$('.desc').val()
+        };
+        $.post('//landingpage.xiaoyun.com/landings/push/landpage/entry/1960',data,function (res) {
+            if(res.success){
+                showErrorMsg('您已成功提交');
+                window.location.href='result.html';
+            }else{
+                showErrorMsg(res.message)
+            }
+        });
     });
     $('.getsm').on('click',function () {
         let ele=document.getElementById('smcode');

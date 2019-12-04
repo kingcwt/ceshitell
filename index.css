@@ -43,6 +43,12 @@ body, html, header, main, div, span, p, li, h5, h3, h4, h6 {
 
 input,textarea{
     -webkit-appearance: none;
+    outline: none;
+
+}
+.flnm,.mob{
+    border: 1px solid #dcd7d7;
+    padding: .15rem .1rem;
 }
 
 
@@ -379,7 +385,7 @@ body {
     box-shadow: 0 2px 0 rgba(0,0,0,0.045);
     border: 0;
     outline: none;
-    border-radius: .025rem;
+    border-radius: .1rem;
     font-size: .32rem;
     padding: .16rem .28rem;
 
@@ -394,7 +400,7 @@ body {
     box-shadow: 0 2px 0 rgba(0,0,0,0.045);
     border: 0;
     outline: none;
-    border-radius: .025rem;
+    border-radius: .1rem;
     padding: .16rem .28rem;
 
 
