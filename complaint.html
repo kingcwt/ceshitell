@@ -127,6 +127,7 @@
             mob:$('.mob').val(),
             desc:$('.desc').val(),
             tags: ['申诉'],
+            smsCode:$('.sm').val()
         };
 
         $.post('//landingpage.xiaoyun.com/landings/push/landpage/entry/1960',data,function (res) {
@@ -139,8 +140,32 @@
         });
     });
     $('.getsm').on('click',function () {
+        if($('.mob').val().trim().length!=11){
+            showErrorMsg('请输入正确的手机号');
+            return false;
+        }
         let ele=document.getElementById('smcode');
         var countdown=60;
+        var data={mob:$('.mob').val()};
+        $.ajax({
+            type:'POST',
+            url:'//landingpage.xiaoyun.com/landings/mob/send_code',
+            data:JSON.stringify(data),
+            cache:false,
+            processData: false,
+            contentType:'application/json',
+            error:(err)=>{
+                showErrorMsg(err)
+            },
+            success:(res)=>{
+               if(res.success){
+                   settime($('#smcode'))
+               }else{
+                   showErrorMsg(res.message)
+               }
+            }
+        });
+
         function settime(val) {
             if (countdown == 0) {
                 val.removeAttr("disabled");
@@ -148,6 +173,7 @@
                 countdown = 60;
                 return false;
             } else {
+
                 val.attr("disabled", true);
                 val.html("重新发送(" + countdown + ")");
                 countdown--;
@@ -156,7 +182,7 @@
                 settime(val);
             },1000);
         }
-        settime($('#smcode'))
+
     })
 
 </script>
