@@ -120,8 +120,10 @@
         data={
             flnm:$('.flnm').val(),
             mob:$('.mob').val(),
-            desc:$('.desc').val()
+            desc:$('.desc').val(),
+            tags: ['申诉'],
         };
+
         $.post('//landingpage.xiaoyun.com/landings/push/landpage/entry/1960',data,function (res) {
             if(res.success){
                 showErrorMsg('您已成功提交');
