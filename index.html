@@ -90,6 +90,14 @@
 <script src="blur.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
+
+      window.addEventListener('pageshow', function( e ){
+          if (e.persisted) {
+              window.location.reload()
+          }
+      })
+
+
       $('.loadingBox').css('display','none');
       $('.loader').css('display','none');
 
