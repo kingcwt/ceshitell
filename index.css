@@ -49,6 +49,7 @@ input,textarea{
 .flnm,.mob{
     border: 1px solid #dcd7d7;
     padding: .15rem .1rem;
+    width: 3.8rem;
 }
 
 
@@ -288,7 +289,7 @@ body {
 }
 
 .com_main .one .p2 span {
-    min-width: 1.7rem;
+    min-width: 1.9rem;
 }
 
 .com_two {
@@ -346,18 +347,18 @@ body {
     display: flex;
     align-items: center;
 }
-.com_four .p2 .sm{
+.p2 .sm{
     width: 2rem;
     height: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border: .025rem solid #dad6d6;
-    border-radius: .08rem;
+    /*border-radius: .08rem;*/
     outline: none;
     padding-left: .2rem;
 }
-.com_four .p2 .getsm{
+ .p2 .getsm{
     border-radius: .06rem;
     outline: none;
     color: #fff;
@@ -367,6 +368,7 @@ body {
     border: 0;
     font-size: .23rem;
     margin-left: .2rem;
+     padding: .1rem;
 }
 
 .com_five{
@@ -471,6 +473,12 @@ body {
     color: #888;
     font-size: .3rem;
 }
+
+.dp input{
+    border: 1px solid #dcd7d7;
+    padding: .15rem .1rem;
+}
+
 /*------loading*/
 .loadingBox{
     /*position: fixed;*/
@@ -558,6 +566,12 @@ body {
     0 0 0 0.5em rgba(255, 255, 0, 0.1);
 }
 
+
+.jz{
+    font-size: .3rem;
+    margin: .38rem 0;
+    text-align: center;
+}
 @keyframes animate {
     to {
         transform: rotate(1turn);

@@ -72,7 +72,7 @@
         </p>
         <!--<a href="javascript:;" id="la" ><p><span><img src="b2.png" alt=""></span><span >拉黑</span></p></a>-->
     </div>
-
+    <div class="jz">正在加载，请稍等...</div>
 </main>
 <footer>
     <div class='loadingBox'>
@@ -91,6 +91,14 @@
 <script type="text/javascript">
     $('.loadingBox').css('display','none');
     $('.loader').css('display','none');
+
+    // $('html,body').animate({
+    //     scrollTop:0
+    // });
+    $(document).scrollTop(0);
+
+
+
     $(document).scroll(function () {
         var h = $(document).height()-$(window).height();
         var scroH = $(document).scrollTop();  //滚动高度
