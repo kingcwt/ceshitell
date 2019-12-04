@@ -69,7 +69,7 @@ body {
 }
 
 .header {
-    height: 2.5rem;
+    height: 2.2rem;
     background: #2963f4;
     display: flex;
     justify-content: center;
@@ -83,6 +83,10 @@ body {
     align-items: center;
     color: #fff;
     font-size: .35rem;
+}
+h3,.p2,.py{
+    background: #fff;
+    padding-left: .2rem!important;
 }
 
 .outbox .pimg {
@@ -113,7 +117,6 @@ body {
 
 .main .one {
     font-size: .4rem;
-    background: #fff;
     padding: .1rem .2rem;
     box-sizing: border-box;
     margin-bottom: .2rem;
@@ -173,7 +176,7 @@ body {
 }
 
 .py #aud {
-    width: 100%;
+    width: 96%;
     height: 1rem;
 }
 .jz{
