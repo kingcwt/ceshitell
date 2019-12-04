@@ -221,11 +221,11 @@ h3,.p2,.py{
 .pd{
     display: flex;
     position: absolute;
-    bottom: .85rem;
+    /*bottom: .85rem;*/
     left: 47%;
     z-index: 9999;
     animation: go 1.2s infinite;
-
+    bottom: -.5rem;
 }
 .pd span:nth-child(1){
     background: #7298ac;
