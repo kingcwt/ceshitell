@@ -91,7 +91,9 @@
 <script type="text/javascript">
     $('.loadingBox').css('display','none');
     $('.loader').css('display','none');
-
+    $('html,body').animate({
+        scrollTop:0
+    })
     var h = $(document).height()-$(window).height();
     var scroH = $(document).scrollTop();  //滚动高度
     var viewH = $(window).height();
@@ -102,9 +104,7 @@
         //     window.location.reload();
         //
         // }, 1000)
-        $('html,body').animate({
-            scrollTop:0
-        })
+
     }else{
         $(document).scroll(function () {
             var h = $(document).height()-$(window).height();
