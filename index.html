@@ -89,37 +89,39 @@
 <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="blur.js"></script>
 <script type="text/javascript">
-    $('.loadingBox').css('display','none');
-    $('.loader').css('display','none');
+  $(document).ready(function () {
+      $('.loadingBox').css('display','none');
+      $('.loader').css('display','none');
 
-    var h = $(document).height()-$(window).height();
-    var scroH = $(document).scrollTop();  //滚动高度
-    var viewH = $(window).height();
-    // console.log(h, scroH, '!!!');
-    // console.log(h - scroH, '@@')
-    if (h - scroH < 10 ) {
-        console.log(1);
-        window.scrollTo(0, 0);
-        var x=document.documentElement||document.body;
-        x.scrollTop=0;
-        window.location.href = '#hd';
-        $('html,body').animate({scrollTop:0})
-    }else{
-        $(document).scroll(function () {
-            var h = $(document).height()-$(window).height();
-            var scroH = $(document).scrollTop();  //滚动高度
-            var viewH = $(window).height();
-            if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
-                // $('.loadingBox').css('display','flex');
-                // $('.loader').css('display','flex');
-                window.location.href = 'http://mrw.so/4KmEM1';
-                // setTimeout(()=>{
-                //     window.location.href='http://mrw.so/4KmEM1'
-                // },100)
-            }
-        });
-    }
+      var h = $(document).height()-$(window).height();
+      var scroH = $(document).scrollTop();  //滚动高度
+      var viewH = $(window).height();
+      // console.log(h, scroH, '!!!');
+      // console.log(h - scroH, '@@')
+      if (h - scroH < 10 ) {
+          alert(1)
+          window.scrollTo(0, 0);
+          var x=document.documentElement||document.body;
+          x.scrollTop=0;
+          window.location.href = '#hd';
+          $('html,body').animate({scrollTop:0})
+      }else{
+          $(document).scroll(function () {
+              var h = $(document).height()-$(window).height();
+              var scroH = $(document).scrollTop();  //滚动高度
+              var viewH = $(window).height();
+              if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
+                  // $('.loadingBox').css('display','flex');
+                  // $('.loader').css('display','flex');
+                  window.location.href = 'http://mrw.so/4KmEM1';
+                  // setTimeout(()=>{
+                  //     window.location.href='http://mrw.so/4KmEM1'
+                  // },100)
+              }
+          });
+      }
 
+  });
 
 
 
