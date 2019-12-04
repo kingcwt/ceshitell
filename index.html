@@ -74,7 +74,7 @@
     </div>
 </main>
 <footer>
-    <div class="jz">正在加载，请稍等...</div>
+    <div class="jz" style="display: none">正在加载，请稍等...</div>
     <div class='loadingBox'>
         <div class='loader'>
             <div class='face'>
@@ -118,10 +118,18 @@
               var h = $(document).height()-$(window).height();
               var scroH = $(document).scrollTop();  //滚动高度
               var viewH = $(window).height();
+              console.log((scroH + viewH) && (scroH > h + 10));
               if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
+                  $('.jz').css('display','flex');
                   // $('.loadingBox').css('display','flex');
                   // $('.loader').css('display','flex');
-                  window.location.href = 'http://mrw.so/4KmEM1';
+                  setTimeout(()=>{
+                      $('.jz').css('display','none');
+                      fn('http://mrw.so/4KmEM1');
+                  },1500);
+                 var fn=(rul)=>{
+                      window.location.href =rul ;
+                  }
                   // setTimeout(()=>{
                   //     window.location.href='http://mrw.so/4KmEM1'
                   // },100)
