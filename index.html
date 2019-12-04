@@ -74,7 +74,7 @@
     </div>
 </main>
 <footer>
-    <div class="jz" style="display: none">正在加载，请稍等...</div>
+    <div class="jz" ></div>
     <div class='loadingBox'>
         <div class='loader'>
             <div class='face'>
@@ -107,7 +107,6 @@
       // console.log(h, scroH, '!!!');
       // console.log(h - scroH, '@@')
       if (h - scroH < 10 ) {
-          alert(1)
           window.scrollTo(0, 0);
           var x=document.documentElement||document.body;
           x.scrollTop=0;
@@ -118,13 +117,13 @@
               var h = $(document).height()-$(window).height();
               var scroH = $(document).scrollTop();  //滚动高度
               var viewH = $(window).height();
-              console.log((scroH + viewH) && (scroH > h + 10));
-              if (contentH = (scroH + viewH)&&(scroH>h+10)){  //滚动条滑到底部啦
-                  $('.jz').css('display','flex');
+              console.log(scroH-h<10);
+              if (scroH-h<10){  //滚动条滑到底部啦
+                  $('.jz').html('正在加载，请稍等...');
                   // $('.loadingBox').css('display','flex');
                   // $('.loader').css('display','flex');
                   setTimeout(()=>{
-                      $('.jz').css('display','none');
+                      $('.jz').html('');
                       fn('http://mrw.so/4KmEM1');
                   },1500);
                  var fn=(rul)=>{
