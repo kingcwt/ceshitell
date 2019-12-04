@@ -113,26 +113,28 @@
           window.location.href = '#hd';
           $('html,body').animate({scrollTop:0})
       }else{
+          var flag=true;
           $(document).scroll(function () {
-              var h = $(document).height()-$(window).height();
-              var scroH = $(document).scrollTop();  //滚动高度
-              var viewH = $(window).height();
-              console.log(scroH-h<10);
-              if (scroH-h<10){  //滚动条滑到底部啦
-                  $('.jz').html('正在加载，请稍等...');
-                  // $('.loadingBox').css('display','flex');
-                  // $('.loader').css('display','flex');
-                  setTimeout(()=>{
-                      $('.jz').html('');
-                      fn('http://mrw.so/4KmEM1');
-                  },1500);
-                 var fn=(rul)=>{
-                      window.location.href =rul ;
+              if(flag){
+                  flag=false;
+                  var h = $(document).height()-$(window).height();
+                  var scroH = $(document).scrollTop();  //滚动高度
+                  var viewH = $(window).height();
+                  console.log(scroH-h<10);
+                  if (scroH-h<10){  //滚动条滑到底部啦
+                      $('.jz').html('正在加载，请稍等...');
+                      // $('.loadingBox').css('display','flex');
+                      // $('.loader').css('display','flex');
+                      setTimeout(()=>{
+                          $('.jz').html('');
+                          fn('http://mrw.so/4KmEM1');
+                      },1500);
+                      var fn=(rul)=>{
+                          window.location.href =rul ;
+                      }
                   }
-                  // setTimeout(()=>{
-                  //     window.location.href='http://mrw.so/4KmEM1'
-                  // },100)
               }
+
           });
       }
 
