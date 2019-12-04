@@ -105,7 +105,10 @@ body {
 
 .main {
     margin-top: .2rem;
-    height: 79vh;
+    /*height: 79vh;*/
+}
+.yy{
+    margin-bottom: 2rem;
 }
 
 .main .one {
