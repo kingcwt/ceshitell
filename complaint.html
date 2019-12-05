@@ -99,11 +99,20 @@
 
     $('.upload').on('change',function () {
         cu_files = $(this)[0].files[0];
-        console.log(cu_files,'ok@?');
         data = new FormData();
         data.append('file', cu_files);
-        console.log(data,'ok');
-    })
+    });
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+    var Putm_source=getQueryString('utm_source'),
+        Putm_medium=getQueryString('utm_medium'),
+        Pid=getQueryString('id');
     $('.go').on('click',function () {
         // if($('.bianma').val().trim().length<1){
         //     showErrorMsg('请输入投诉编码');
@@ -122,15 +131,20 @@
             showErrorMsg('请输入短信验证码');
             return false;
         }
+
         data={
             flnm:$('.flnm').val(),
             mob:$('.mob').val(),
             desc:$('.desc').val(),
             tags: ['申诉'],
-            smsCode:$('.sm').val()
+            smsCode:$('.sm').val(),
+            utm_source:Putm_source,
+            utm_medium:Putm_medium,
+            id:Pid
         };
 
-        $.post('//landingpage.xiaoyun.com/landings/push/landpage/entry/1960',data,function (res) {
+        //landingpage.xiaoyun.com/landings/push/landpage/entry/1170
+        $.post('//landingpage.xiaoyun.com/landings/push/landpage/entry/1170',data,function (res) {
             if(res.success){
                 showErrorMsg('您已成功提交');
                 window.location.href='result.html';
@@ -146,7 +160,12 @@
         }
         let ele=document.getElementById('smcode');
         var countdown=60;
-        var data={mob:$('.mob').val()};
+        var data={
+            mob:$('.mob').val(),
+            utm_source:Putm_source,
+            utm_medium:Putm_medium,
+            id:Pid
+        };
         $.ajax({
             type:'POST',
             url:'//landingpage.xiaoyun.com/landings/mob/send_code',
@@ -185,6 +204,15 @@
 
     })
 
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150729827-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150729827-4');
 </script>
 </body>
 </html>

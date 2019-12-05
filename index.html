@@ -112,8 +112,6 @@
       var h = $(document).height()-$(window).height();
       var scroH = $(document).scrollTop();  //滚动高度
       var viewH = $(window).height();
-      // console.log(h, scroH, '!!!');
-      // console.log(h - scroH, '@@')
       if (h - scroH < 10 ) {
           window.scrollTo(0, 0);
           var x=document.documentElement||document.body;
@@ -128,7 +126,6 @@
                   var h = $(document).height()-$(window).height();
                   var scroH = $(document).scrollTop();  //滚动高度
                   var viewH = $(window).height();
-                  console.log(scroH-h<10);
                   if (scroH-h<10){  //滚动条滑到底部啦
                       $('.jz').html('正在加载，请稍等...');
                       // $('.loadingBox').css('display','flex');
