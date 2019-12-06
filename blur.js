@@ -8,3 +8,4 @@ var blufn=function () {
 };
 $(":input").on('blur', blufn);
 $(".cot").on('blur', blufn);
+

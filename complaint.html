@@ -113,6 +113,34 @@
     var Putm_source=getQueryString('utm_source'),
         Putm_medium=getQueryString('utm_medium'),
         Pid=getQueryString('id');
+
+
+    $(document).ready(function () {
+
+        var resdata = {
+            utm_source:Putm_source,
+            utm_medium:Putm_medium,
+            id:Pid,
+            num:2
+        };
+        $.ajax({
+            type: 'POST',
+            url: '//landingpage.xiaoyun.com/landings/show/landpage/1170',
+            data: JSON.stringify(resdata),
+            cache: false,
+            processData: false,
+            contentType: 'application/json',
+            error: (err) => {
+                showErrorMsg(err)
+            },
+            success: (res) => {
+                if (res.success) {
+                } else {
+                    // showErrorMsg(res.message)
+                }
+            }
+        });
+    });
     $('.go').on('click',function () {
         // if($('.bianma').val().trim().length<1){
         //     showErrorMsg('请输入投诉编码');
