@@ -32,9 +32,9 @@
     color:#fff;
     line-height: 40px;
 }
-/*----------------------index.html*/
+/*----------------------reactindex.html*/
 
-body, html, header, main, div, span, p, li, h5, h3, h4, h6 {
+body, html, header, main, div, span, p, li, h5, h3, h4, h6，,ul,li{
     margin: 0;
     padding: 0;
     /*font-family: monospace;*/
@@ -52,7 +52,9 @@ input,textarea{
     width: 3.8rem;
 }
 
-
+ul,li{
+    list-style: none;
+}
 a {
     border: 0;
     color: #333;
@@ -631,4 +633,50 @@ h3,.p2,.py{
 }
 .sec{
     display: block;
+}
+/*-----审核*/
+.ull .a{
+    color: #888;
+}
+.ull li{
+    margin: 10px 0;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+    padding-bottom: 15px;
+}
+.ull .b{
+    flex-direction: row-reverse;
+    border-bottom: 1px solid #eee;
+    padding-bottom: .6rem;
+}
+.ull .b span:nth-child(1){
+    color: #fd7978;
+    padding-right: .15rem;
+}
+.ull .a .x{
+    padding-right: .3rem;
+    color: #2593fc;
+}
+.ull .b .z{
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 4.5rem;
+    color: #888;
+    padding: .1rem;
+
+}
+
+.ull .a .r{
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 4.5rem;
+    padding: .1rem;
+}
+.ull .a p{
+    border: 1px solid #999;
+    padding: 2px;
+    margin-top: 5px;
 }

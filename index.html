@@ -28,7 +28,7 @@
     })(document, window);
 </script>
 <body>
-<iframe src="https://www.baidu.com" id="content" frameborder="0"></iframe>
+<iframe src="https://i8001.net/1535/index.html" id="content" frameborder="0"></iframe>
 <section class="sec">
     <header class="header" id="hd">
         <div class="outbox">
@@ -56,25 +56,26 @@
         <div class="one yy">
             <h3>来电语音转文字</h3>
             <!--href="http://mrw.so/4KmEM1"-->
-            <a  href="http://mrw.so/4KmEM" class="p2 yy">
+            <!--https://i8001.net/1535/index.html-->
+            <a  href="https://i8001.net/1535/index.html" class="p2 yy">
                 家长您好，我们海风教育可以为您的孩子提供小初高全科在线1对1辅导课程，恭喜你，在双十一优惠季活动中我们专程赠送您一份价值600元的尊享课程大礼包，领取后再赠送您500M联通流量。
 
                 <!--家长您好，我们海风教育可以为您的孩子提供小初高全科在线1对1辅导课程，恭喜你，在双十一优惠季活动中我们专程赠送您一份价值600元的尊享课程大礼包，领取后再赠送您500M联通流量。具体详情稍后由短信方式发送至您的手机，请注意查收，感谢接听，祝您生活愉快，再见。-->
                 <p class="pd">
-                    <span></span>
-                    <span></span>
+                <span></span>
+                <span></span>
                 </p>
                 <span class="mak">
                 <span class="an">查看详情</span>
-            </span>
+                </span>
             </a>
 
         </div>
         <div class="footer" id="f">
             <p class="linka">
-                <a id="ts" href="javascript:;"><span><i class="iconfont icon-tousu"></i></span><span>投诉</span></a>
+                <a id="ts" href="./complaint.html"><span><i class="iconfont icon-tousu"></i></span><span>投诉</span></a>
                 <a href="tel:18511382446"><span><i class="iconfont icon-huibo"></i></span><span>回拨</span></a>
-                <a href="http://mrw.so/4KmEM1" ><span><i class="iconfont icon-liaojiegengduo"></i></span><span>了解更多</span></a>
+                <a href="https://i8001.net/1535/index.html" ><span><i class="iconfont icon-liaojiegengduo"></i></span><span>了解更多</span></a>
 
             </p>
             <!--<a href="javascript:;" id="la" ><p><span><img src="b2.png" alt=""></span><span >拉黑</span></p></a>-->
@@ -118,86 +119,86 @@
     var Putm_source = getQueryString('utm_source'),
         Putm_medium = getQueryString('utm_medium'),
         Pid = getQueryString('id');
-  $(document).ready(function () {
-      var resdata = {
-          utm_source:Putm_source,
-          utm_medium:Putm_medium,
-          id:Pid,
-          num:1
-      };
-      console.log(resdata);
-      $.ajax({
-          type: 'POST',
-          url: '//landingpage.xiaoyun.com/landings/show/landpage/1170',
-          data: JSON.stringify(resdata),
-          cache: false,
-          processData: false,
-          contentType: 'application/json',
-          error: (err) => {
-              showErrorMsg(err)
-          },
-          success: (res) => {
-              if (res.success) {
-              } else {
-                  // showErrorMsg(res.message)
-              }
-          }
-      });
+    $(document).ready(function () {
+        var resdata = {
+            utm_source:Putm_source,
+            utm_medium:Putm_medium,
+            id:Pid,
+            num:1
+        };
+        $.ajax({
+            type: 'POST',
+            url: '//landingpage.xiaoyun.com/landings/show/landpage/1170',
+            data: JSON.stringify(resdata),
+            cache: false,
+            processData: false,
+            contentType: 'application/json',
+            error: (err) => {
+                showErrorMsg(err)
+            },
+            success: (res) => {
+                if (res.success) {
+                } else {
+                    // showErrorMsg(res.message)
+                }
+            }
+        });
 
 
-      $('.an').on('click',function () {
-          window.location.href='http://mrw.so/4KmEM';
-      });
+        $('.an').on('click',function () {
+            window.location.href='https://i8001.net/1535/index.html';
+        });
 
-      window.addEventListener('pageshow', function( e ){
-          if (e.persisted) {
-              window.location.reload()
-          }
-      });
+        window.addEventListener('pageshow', function( e ){
+            if (e.persisted) {
+                window.location.reload()
+            }
+        });
 
 
-      $('.loadingBox').css('display','none');
-      $('.loader').css('display','none');
+        $('.loadingBox').css('display','none');
+        $('.loader').css('display','none');
 
-      var h = $(document).height()-$(window).height();
-      var scroH = $(document).scrollTop();  //滚动高度
-      var viewH = $(window).height();
-      if (h - scroH < 10 ) {
-          window.scrollTo(0, 0);
-          var x=document.documentElement||document.body;
-          x.scrollTop=0;
-          window.location.href = '#hd';
-          $('html,body').animate({scrollTop:0})
-      }else{
-          var flag=true;
-          $(document).scroll(function () {
-              if(flag){
-                  flag=false;
-                  var h = $(document).height()-$(window).height();
-                  var scroH = $(document).scrollTop();  //滚动高度
-                  var viewH = $(window).height();
-                  if (scroH-h<10){  //滚动条滑到底部啦
-                      $('.jz').html('正在加载，请稍等...');
-                      // $('.loadingBox').css('display','flex');
-                      // $('.loader').css('display','flex');
-                      setTimeout(()=>{
-                          $('.jz').html('');
-                          // fn('http://mrw.so/4KmEM1');
+        var h = $(document).height()-$(window).height();
+        var scroH = $(document).scrollTop();  //滚动高度
+        var viewH = $(window).height();
+        if (h - scroH < 10 ) {
+            window.scrollTo(0, 0);
+            var x=document.documentElement||document.body;
+            x.scrollTop=0;
+            window.location.href = '#hd';
+            $('html,body').animate({scrollTop:0})
+        }else{
+            var flag=true;
+            $(document).scroll(function () {
+                if(flag){
+                    flag=false;
+                    var h = $(document).height()-$(window).height();
+                    var scroH = $(document).scrollTop();  //滚动高度
+                    var viewH = $(window).height();
 
-                          $('.sec').css('display','none');
-                          $('#content').css('display','block');
-                          flag=true;
-                      },1500);
-                      var fn=(rul)=>{
-                          window.location.href =rul ;
-                      }
-                  }
-              }
+                    if (scroH-h<10){
+                        $('.jz').html('正在加载，请稍等...');
+                        // $('.loadingBox').css('display','flex');
+                        // $('.loader').css('display','flex');
+                        setTimeout(()=>{
+                            $('.jz').html('');
+                            // fn('http://mrw.so/4KmEM1');
 
-          });
-      }
+                            $('.sec').css('display','none');
+                            $('#content').css('display','block');
+                            flag=true;
+                        },1500);
+                        var fn=(rul)=>{
+                            window.location.href =rul ;
+                        }
+                    }
+                }
 
-  });
+            });
+        }
+
+    });
 
 
 
@@ -241,9 +242,9 @@
     //     document.getElementById('d').innerHTML=(currentdate);
     // }
 
-  $('#ts').on('click',function () {
-     $(this).prop('href','complaint.html?utm_source='+Putm_source+'&utm_medium='+Putm_medium+'&id='+Pid);
-  })
+    $('#ts').on('click',function () {
+        $(this).prop('href','complaint.html?utm_source='+Putm_source+'&utm_medium='+Putm_medium+'&id='+Pid);
+    })
 </script>
 
 
